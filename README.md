@@ -1,2 +1,3 @@
 # presentation-stage-gbertherat
-Slideshow de fin de stage de Guillaume dédié au Machine Learning et APIs
+
+Slideshow (Reveal.js) de fin de stage de Guillaume dédié au Machine Learning et APIs
