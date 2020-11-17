@@ -1,0 +1,18 @@
+#sketch{
+    position:absolute!important;
+    left:0;
+    top:0;
+    z-index: -1;
+}
+
+.title{
+    font-size: 1.2em!important;
+}
+
+.subtitle{
+    font-size: 0.9em!important;
+}
+
+.shadow{
+    text-shadow: 2px 2px #000000!important;
+}
