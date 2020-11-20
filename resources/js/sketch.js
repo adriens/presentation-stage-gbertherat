@@ -52,7 +52,9 @@ function draw(){
 }
 
 function windowResized(){
+    blendMode(BLEND);
     resizeCanvas(windowWidth, windowHeight);
+    background(30);
 }
 function clearScreen(){
     blendMode(BLEND);
