@@ -11,13 +11,20 @@ function setup(){
     canvas.id("sketch");
 
     background(30);
+    setInterval(clearScreen, 300000);
 }
 
 function draw(){
+    if(frameRate() < 10){
+        blendMode(BLEND);
+        background(30);
+    }
+
     if(yoffset*50 > 255){
         yoffset = 0;
     }
-    blendMode(NORMAL);
+
+    blendMode(BLEND);
     colorMode(RGB);
     fill(30);
     noStroke();
@@ -31,7 +38,7 @@ function draw(){
     let xoffset = 0;
     beginShape();
     for(let x = xconstraint; x < width-xconstraint/2+step/2; x = x + step){
-        let rng = random(0,0.1);
+        let rng = random(0,0.01);
         let y = map(noise(xoffset, yoffset)+rng, 0.3, 0.6, yconstraint, height - yconstraint, true);
         vertex(x, y);
         xoffset += 0.01;
@@ -42,10 +49,12 @@ function draw(){
     stroke(0, 0, 255);
     strokeWeight(10);
     rect(xconstraint, yconstraint, width-xconstraint*2, height - yconstraint*2);
-
-    
 }
 
 function windowResized(){
     resizeCanvas(windowWidth, windowHeight);
+}
+function clearScreen(){
+    blendMode(BLEND);
+    background(30);
 }

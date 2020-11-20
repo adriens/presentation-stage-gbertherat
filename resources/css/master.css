@@ -5,14 +5,108 @@
     z-index: -1;
 }
 
-.title{
-    font-size: 1.2em!important;
+section{
+    height: 100%!important;
+
+    display: flex!important;
+    flex-direction: column!important;
+    justify-content: center!important;
 }
 
-.subtitle{
-    font-size: 0.9em!important;
+.reveal .slide-number {
+    font-size: 20pt;
+    color: #ffffff; 
+    background-color: none!important;
 }
 
 .shadow{
     text-shadow: 2px 2px #000000!important;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.title{
+    font-size: 1.9em!important;
+}
+
+.subtitle{
+    font-size: 1.3em!important;
+}
+
+#tutors{
+    margin-top: 40px;
+    margin-left: 20%!important;
+    margin-right: auto!important;
+}
+
+#container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.small{
+    font-size: 0.9em!important;
+}
+
+.smaller{
+    font-size: 0.6em!important;
+}
+
+.left{
+    text-align: left!important;
+}
+
+.picture{
+    width: 500px;
+    height: 300px;
+    border: 1px solid white;
+}
+
+.dual-pic{
+    width: 800px;
+    height: 500px;
+    border: 1px solid white;
+}
+
+.main-picture{
+    width: 1400px;
+    height: 700px;
+    border: 1px solid black;
+}
+
+iframe{
+    border: 1px solid black;
+}
+
+#partners{
+    position: absolute!important;
+    bottom: 5%!important;
+    left: 0!important;
+    right: 0!important;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo{
+    width: 170px;
+    height: 170px;
+    border: 1px solid black;
+}
+
+.round{
+    border-radius: 50px;
+}
+
+.page{
+    position: absolute!important;
+    font-size: 0.6em;
+    right:0px;
+    bottom:0px;
 }
