@@ -15,7 +15,7 @@ function setup(){
 }
 
 function draw(){
-    if(frameRate() < 10){
+    if(frameRate() < 5){
         blendMode(BLEND);
         background(30);
     }
@@ -38,7 +38,7 @@ function draw(){
     let xoffset = 0;
     beginShape();
     for(let x = xconstraint; x < width-xconstraint/2+step/2; x = x + step){
-        let rng = random(0,0.01);
+        let rng = random(0,0.001);
         let y = map(noise(xoffset, yoffset)+rng, 0.3, 0.6, yconstraint, height - yconstraint, true);
         vertex(x, y);
         xoffset += 0.01;
