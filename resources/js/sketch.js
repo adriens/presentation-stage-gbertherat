@@ -33,7 +33,7 @@ function draw(){
     blendMode(ADD);
     colorMode(HSB, 255); 
     noFill();
-    stroke(yoffset*50, 255, 20, 100);
+    stroke(yoffset*50, 255, 20, 70);
     strokeWeight(1);
     let xoffset = 0;
     beginShape();
