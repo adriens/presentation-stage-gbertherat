@@ -1,6 +1,10 @@
-# Qui est Guillaume
+# Présentation de stage @UNC 2020
+## Bertherat Guillaume
 
-Guillaume est le stagiaire UNC du GLIA de l'année 2020, plus de détails [ici](https://adriens.github.io/livre-or-collaborateurs-glia-slideshow/#/4).
-# presentation-stage-gbertherat
+Slideshow de présentation du stage à l'OPT sous reveal.js.
+Plus d'informations:
+https://adriens.github.io/livre-or-collaborateurs-glia-slideshow/#/4
 
-Slideshow (Reveal.js) de fin de stage de Guillaume dédié au Machine Learning et APIs
+La présentation est disponible ici:
+https://adriens.github.io/presentation-stage-gbertherat/
+
