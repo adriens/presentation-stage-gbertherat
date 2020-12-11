@@ -35,7 +35,7 @@ section{
     font-size: 1.3em!important;
 }
 
-#tutors{
+.tutors{
     margin-top: 40px;
     margin-left: 20%!important;
     margin-right: auto!important;
@@ -82,7 +82,7 @@ iframe{
     border: 1px solid black;
 }
 
-#partners{
+.partners{
     position: absolute!important;
     bottom: 5%!important;
     left: 0!important;
