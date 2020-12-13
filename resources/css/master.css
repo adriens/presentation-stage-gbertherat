@@ -28,11 +28,11 @@ section{
 }
 
 .title{
-    font-size: 1.9em!important;
+    font-size: 4vw!important;
 }
 
 .subtitle{
-    font-size: 1.3em!important;
+    font-size: 3vw!important;
 }
 
 .tutors{
@@ -49,11 +49,11 @@ section{
 }
 
 .small{
-    font-size: 0.9em!important;
+    font-size: 2vw!important;
 }
 
 .smaller{
-    font-size: 0.6em!important;
+    font-size: 4vh!important;
 }
 
 .left{
@@ -61,24 +61,28 @@ section{
 }
 
 .picture{
-    width: 500px;
-    height: 300px;
+    width: 50vh;
+    height: 30vh;
     border: 1px solid white;
 }
 
+.image{
+    height: 50vh;
+}
+
 .dual-pic{
-    width: 800px;
-    height: 500px;
+    height: 50vh;
     border: 1px solid white;
 }
 
 .main-picture{
-    width: 1400px;
-    height: 700px;
+    height: 70vh;
     border: 1px solid black;
 }
 
 iframe{
+    width:150vh;
+    height:80vh;
     border: 1px solid black;
 }
 
@@ -95,8 +99,8 @@ iframe{
 }
 
 .logo{
-    width: 170px;
-    height: 170px;
+    width: 15vh;
+    height: 15vh;
     border: 1px solid black;
 }
 
@@ -109,4 +113,8 @@ iframe{
     font-size: 0.6em;
     right:0px;
     bottom:0px;
+}
+
+.list{
+    font-size: 4vh;
 }
