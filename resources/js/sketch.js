@@ -1,5 +1,5 @@
 let yoffset = 0;
-let step = 60;
+let step = 20;
 
 let xconstraint = 40;
 let yconstraint = 40;
@@ -20,35 +20,44 @@ function draw(){
         background(30);
     }
 
-    if(yoffset*50 > 255){
-        yoffset = 0;
-    }
+    drawLine()
+    drawBorders();
+}
 
-    blendMode(BLEND);
-    colorMode(RGB);
-    fill(30);
-    noStroke();
-    rect(width-xconstraint, 0, width, height);
-
-    blendMode(ADD);
+function drawLine(){
+    push();
     colorMode(HSB, 255); 
+   
+    var color = yoffset * 100;
+
     noFill();
-    stroke(yoffset*50, 255, 20, 70);
+    stroke(color, 255, 255, 50);
     strokeWeight(1);
+
     let xoffset = 0;
     beginShape();
-    for(let x = xconstraint; x < width-xconstraint/2+step/2; x = x + step){
-        let rng = random(0,0.001);
-        let y = map(noise(xoffset, yoffset)+rng, 0.3, 0.6, yconstraint, height - yconstraint, true);
+    for(let x = xconstraint; x < width-xconstraint + step; x = x + step){
+        let y = map(noise(xoffset, yoffset), 0.3, 0.6, yconstraint, height - yconstraint, true);
         vertex(x, y);
-        xoffset += 0.01;
+        xoffset += 0.001;
     }
     endShape();
+    yoffset += 0.001;
+    pop();
+}
 
-    yoffset += 0.003;
-    stroke(0, 0, 255);
-    strokeWeight(10);
-    rect(xconstraint, yconstraint, width-xconstraint*2, height - yconstraint*2);
+function drawBorders(){
+    push();
+    stroke(255);
+    strokeWeight(20);
+    line(xconstraint, yconstraint, width-xconstraint, yconstraint);
+    line(xconstraint, yconstraint, xconstraint, height-yconstraint);
+    line(xconstraint, height - yconstraint, width-xconstraint, height - yconstraint);
+    line(width - xconstraint, yconstraint, width - xconstraint, height - yconstraint);
+
+    stroke(30);
+    line(width - xconstraint/2, yconstraint/2, width - xconstraint/2, height - yconstraint/2);
+    pop();
 }
 
 function windowResized(){
